@@ -3,7 +3,10 @@ import "./Component.css";
 function Component(props) {
   return (
     <>
-      <div className="card-container">
+      <div
+        className="card-container"
+        style={{ backgroundColor: props.backgroundColor }}
+      >
         <img className="car-image" src={props.imageSrc} alt="Sedan icon" />
         <h1 className="title">{props.title}</h1>
         <p className="info">{props.info}</p>

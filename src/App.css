@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -7,15 +12,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.card-container:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card-container:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .card-container {
-  background-color: #e28625;
   width: 100%;
   max-width: 307px;
   height: 500px;
   padding: 48px;
-  border-radius: 8px;
 }
 .title {
   font-size: 40px;
@@ -43,4 +56,15 @@
 
 .more-btn:hover {
   transform: scale(1.1);
+  background-color: transparent;
+  border: 1px solid white;
+  color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
 }
