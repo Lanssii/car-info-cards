@@ -1,16 +1,107 @@
-# React + Vite
+# Car Cards UI (React + Figma)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive car category card component built with **React** based on a **Figma design**.
+This project showcases reusable components, clean styling, and modern frontend practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Reusable React component (`Component.jsx`)
+- Props-based dynamic content
+- Clean and responsive layout
+- Styled with custom CSS
+- Hover effects and smooth transitions
+- Mobile-friendly design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The UI was inspired and implemented from a Figma design.
+Each card represents a car category:
+
+- Sedans
+- SUVs
+- Luxury
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
+- JavaScript (ES6+)
+- CSS3 (Flexbox, Media Queries)
+- Google Fonts
+
+---
+
+## 📂 Project Structure
+
+```
+car-cards/
+│── src/
+│   │── Component/
+│   │   ├── Component.jsx
+│   │   ├── Component.css
+│   │
+│   │── assets/
+│   │   ├── car1-card.png
+│   │   ├── car2-card.png
+│   │   ├── car3-card.png
+│   │
+│   │── App.jsx
+│   │── App.css
+│   │── main.jsx
+│
+│── index.html
+│── package.json
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/car-cards.git
+```
+
+2. Navigate to the project:
+
+```bash
+cd car-cards
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the project:
+
+```bash
+npm run dev
+```
+
+---
+
+## Component Example
+
+```jsx
+<Component
+  imageSrc={sedanIcon}
+  title="SEDANS"
+  info="Choose a sedan for its affordability and excellent fuel economy."
+  backgroundColor="#e38826"
+/>
+```
+
+---
+
+## Author
+
+Created by **Lana Shotashvili**
+Frontend Developer | React Learner
