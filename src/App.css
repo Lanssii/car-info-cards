@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.card-container {
+  background-color: #e28625;
+  width: 100%;
+  max-width: 307px;
+  height: 500px;
+  padding: 48px;
+  border-radius: 8px;
+}
+.title {
+  font-size: 40px;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.info {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 100%;
+  max-width: 212px;
+  margin-bottom: 80px;
+  line-height: 1.5;
+}
+
+.more-btn {
+  color: #e28625;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding: 15px 30px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.more-btn:hover {
+  transform: scale(1.1);
+}
