@@ -3,6 +3,12 @@
 * {
   box-sizing: border-box;
 }
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .card-container {
   background-color: #e28625;
   width: 100%;
