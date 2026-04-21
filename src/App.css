@@ -27,7 +27,6 @@ html {
 .card-container {
   width: 100%;
   max-width: 307px;
-  height: 500px;
   padding: 48px;
 }
 .title {
@@ -66,5 +65,25 @@ html {
     flex-direction: column;
     height: auto;
     padding: 40px 0;
+  }
+  .card-container:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+
+  .card-container:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .info {
+    margin-bottom: 60px;
+  }
+  .more-btn {
+    padding: 10px 20px;
   }
 }
